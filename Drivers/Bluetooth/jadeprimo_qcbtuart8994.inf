@@ -3,7 +3,7 @@
 ;Copyright (c) 2012-2013  Qualcomm Technologies, Inc.
 ;
 ;Module Name:
-;    qcbtuart_fw.inf
+;    qcbtuart.inf
 ;
 ;Abstract:
 ;    INF file for installing the BTFW Package for the Bluetooth UART Driver.
@@ -15,11 +15,11 @@
 
 [Version]
 Signature   = "$WINDOWS NT$"
-Class       = SYSTEM
+Class       = System
 ClassGuid   = {4d36e97d-e325-11ce-bfc1-08002be10318}
 Provider    = %QCOM%
-DriverVer   = 07/02/2015,1.0.1067.0
-CatalogFile = qcbtuart_fw8992.cat
+DriverVer   = 07/02/2015,2.3.0.6
+CatalogFile = jadeprimo_qcbtuart8994.cat
 
 [DestinationDirs]
 Drivers_Dir_24 = 12
@@ -31,7 +31,7 @@ Drivers_Dir_24 = 12
 nvm_tlv_3.2.bin      = 1,,
 rampatch_tlv_3.2.tlv = 1,,
 
-[DefaultInstall.NTARM64]
+[DefaultInstall.NTarm64]
 CopyFiles = Drivers_Dir_24
 
 [Drivers_Dir_24]
